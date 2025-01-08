@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gestion de Planning avec Prénoms et Événements</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <label for="prenom">Ajouter un prénom :</label>
+    <input type="text" id="prenom" />
+    <label for="type">Type :</label>
+    <select id="type">
+      <option value="Présent">Présent</option>
+      <option value="Congé">Congé</option>
+      <option value="Absence">Absence</option>
+    </select>
+    <label for="jour">Jour :</label>
+    <select id="jour">
+      <option value="Lundi">Lundi</option>
+      <option value="Mardi">Mardi</option>
+      <option value="Mercredi">Mercredi</option>
+      <option value="Jeudi">Jeudi</option>
+      <option value="Vendredi">Vendredi</option>
+      <option value="Samedi">Samedi</option>
+      <option value="Dimanche">Dimanche</option>
+    </select>
+    <button onclick="ajouterEvenement()">Ajouter</button>
+  </div>
+  
+  <div class="calendar">
+    <div class="day" id="Lundi">Lundi</div>
+    <div class="day" id="Mardi">Mardi</div>
+    <div class="day" id="Mercredi">Mercredi</div>
+    <div class="day" id="Jeudi">Jeudi</div>
+    <div class="day" id="Vendredi">Vendredi</div>
+    <div class="day" id="Samedi">Samedi</div>
+    <div class="day" id="Dimanche">Dimanche</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
